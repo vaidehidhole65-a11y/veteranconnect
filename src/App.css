@@ -1,0 +1,127 @@
+
+/* HOME HERO HEADING DESIGN */
+
+.hero {
+  min-height: 570px;
+  padding: 90px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(120deg, #071b35, #123f68, #176b83);
+  color: white;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero-tag {
+  display: inline-block;
+  color: #f5c76b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.hero-title {
+  font-size: clamp(38px, 5.2vw, 68px);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin: 0 0 25px;
+}
+
+.hero-title span {
+  display: block;
+  color: #f5c76b;
+  margin-top: 12px;
+}
+
+.hero-content p {
+  max-width: 590px;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #dce8f3;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: #f5c76b;
+  color: #102b47;
+}
+
+.primary-btn:hover {
+  background: #ffd98d;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  color: white;
+  border: 1px solid rgba(255,255,255,0.7);
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #102b47;
+}
+
+.hero-icon {
+  width: 260px;
+  height: 260px;
+  min-width: 260px;
+  border: 2px solid rgba(245,199,107,0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5c76b;
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 0 70px rgba(245,199,107,0.12);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 65px 7%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    font-size: 39px;
+    line-height: 1.3;
+  }
+
+  .hero-icon {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+  }
+
+  .hero-icon svg {
+    width: 85px;
+    height: 85px;
+  }
+}
